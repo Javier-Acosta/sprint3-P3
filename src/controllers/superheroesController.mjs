@@ -114,15 +114,15 @@ export async function eliminarSuperheroePorNombreController(req, res) {
 
 //formulario de carga
 
-export async function agregarController(req, res){
+export async function agregarController(req, res) {
     res.render('addSuperhero')
 }
 
-export async function editarController (req,res){
-    const {heroe, id}= req.query 
-    res.render('editSuperhero', {heroe: JSON.parse(heroe)})
+export async function editarController(req, res) {
+    const { heroe, id } = req.query;
+    res.render('editSuperhero', { heroe: JSON.parse(heroe), id })
 }
 
-export async function editarHeroeController(req,res){
+export async function editarHeroeController(req, res) {
     res.render('editSuperhero')
 }
