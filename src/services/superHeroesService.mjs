@@ -1,4 +1,5 @@
 import SuperHeroRepository from "../repositories/SuperHeroRepository.mjs";
+const repository = SuperHeroRepository
 
 export async function obtenerSuperheroePorId(id) {
 
@@ -6,8 +7,9 @@ export async function obtenerSuperheroePorId(id) {
 
 
 }
-export async function obtenerTodosLosHeroes() {
-    return await SuperHeroRepository.obtenerTodos();
+export function obtenerTodosLosHeroes() {
+    const superheroes = repository.obtenerTodos()
+    return superheroes;
 
 }
 

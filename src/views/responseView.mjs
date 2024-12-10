@@ -1,17 +1,17 @@
-export function renderizarSuperheroe(superheroe) {
+export function renderizarSuperheroe(superHeroe) {
     return {
-        Nombre: superheroe.nombreSuperHeroe,
-        "Nombre Real": superheroe.nombreReal,
-        Edad: superheroe.edad,
-        "Planeta de Origen": superheroe.planetaOrigen,
-        Debilidad: superheroe.debilidad,
-        Poderes: superheroe.poderes,
-        Aliados: superheroe.aliados,
-        Enemigos: superheroe.enemigos,
-        autor: 'Acosta Javier Grupo-01'
-    };
+        Nombre: superHeroe.nombreSuperHeroe,
+        'Nombre Real': superHeroe.nombreReal,
+        edad: superHeroe.edad,
+        'Planeta de Origen': superHeroe.planetaOrigen,
+        Debilidad: superHeroe.debilidad,
+        Poderes: superHeroe.poderes,
+        Aliados: superHeroe.aliados,
+        Enemigos: superHeroe.enemigos
+    }
+
 }
 
 export function renderizarListaSuperheroes(superheroes) {
-    return superheroes.map(superheroe => renderizarSuperheroe(superheroe));
+    return superheroes.map(superheroe => renderizarSuperheroe(superheroe))
 }

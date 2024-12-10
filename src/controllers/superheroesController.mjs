@@ -22,7 +22,7 @@ export async function obtenerSuperheroePorIdController(req, res) {
 }
 export async function obtenerTodosLosSuperheroesController(req, res) {
     const superheroes = await obtenerTodosLosHeroes();
-    res.send(renderizarListaSuperheroes(superheroes));
+    res.render('dashboard', { superheroes });
 
 }
 
