@@ -7,7 +7,8 @@ export function renderizarSuperheroe(superHeroe) {
         Debilidad: superHeroe.debilidad,
         Poderes: superHeroe.poderes,
         Aliados: superHeroe.aliados,
-        Enemigos: superHeroe.enemigos
+        Enemigos: superHeroe.enemigos,
+        autor: 'Javier Acosta Grupo-01' 
     }
 
 }

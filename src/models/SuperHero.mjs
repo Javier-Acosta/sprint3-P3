@@ -10,6 +10,8 @@ const superheroSchema = new mongoose.Schema({
     poderes: [String],
     aliados: [String],
     enemigos: [String],
+    autor: { type: String, default: 'Javier Acosta' },
+
     createdAt: { type: Date, default: Date.now }
 }, { collection: 'Grupo-01' })
 
