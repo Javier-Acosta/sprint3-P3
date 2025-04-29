@@ -1,9 +1,17 @@
 import express from "express";
 
 import {
-     obtenerSuperheroePorIdController, obtenerTodoslosSuperheroesController, buscarSuperheroesPorAtributoController,
-     obtenerSuperheroesMayoresDe30Controller, agregarHeroeController, actualizarHeroeController, borrarHeroeController, 
-     borrarPorNombreController, agregarController, editarController, editarHeroeController
+    obtenerSuperheroePorIdController,
+    obtenerTodoslosSuperheroesController,
+    buscarSuperheroesPorAtributoController,
+    obtenerSuperheroesMayoresDe30Controller,
+    agregarHeroeController,
+    actualizarHeroeController,
+    borrarHeroeController,
+    borrarPorNombreController,
+    agregarController,
+    editarController,
+    editarHeroeController
 } from '../controllers/superheroesController.mjs'
 import { heroeValidation } from '../validators/heroeValidator.mjs'
 import { handleValidationErrors } from "../middlewares/errorMiddleware.mjs";
