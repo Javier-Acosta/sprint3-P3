@@ -25,7 +25,7 @@ router.get('/heroes/mayoresDe30/', obtenerSuperheroesMayoresDe30Controller)
 router.get('/heroes/agregar/', agregarController) // muestra el formulario
 router.get('/heroes/editar/', editarController) // muestra el formulario
 
-router.post('/heroes/nuevoheroe/', heroeValidation(), handleValidationErrors, agregarHeroeController)
+router.post('/heroes/nuevoheroe/',  handleValidationErrors, agregarHeroeController)
 router.put('/heroes/actualizar/:id', heroeValidation(), handleValidationErrors, actualizarHeroeController)
 router.put('/heroes/:id/editar', editarHeroeController) // envia al servidor
 router.delete('/heroes/borrar/:id', borrarHeroeController)

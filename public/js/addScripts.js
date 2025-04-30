@@ -14,6 +14,7 @@ window.addEventListener("load", () => {
       const superheroe = {        
         nombreSuperheroe: formAgregar.nombreSuperheroe.value,
         nombreReal: formAgregar.nombreReal.value,
+        password: formAgregar.password.value,
         edad: formAgregar.edad.value,
         planetaOrigen: formAgregar.planetaOrigen.value,
         debilidad: formAgregar.debilidad.value,
